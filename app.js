@@ -4,6 +4,7 @@ const iconElement = document.querySelector(".weather-icon");
 const tempElement = document.querySelector(".temperature-value p");
 const desElement = document.querySelector(".temperature-description p");
 const locationElement = document.querySelector(".location p");
+const dateElement = document.querySelector(".app-title.date");
 
 // APP DATA
 
@@ -14,7 +15,10 @@ weather.temperature = {
 
 // Variables
 const KELVIN = 273;
-const KEY = '82005d27a116c2880c8f0fcb866998a0'
+const KEY = '82005d27a116c2880c8f0fcb866998a0';
+today = new Date();
+dateElement.innerHTML = `<p>${today.toDateString() }</p>`;
+
 
 // Check if Browser Supports Location
 

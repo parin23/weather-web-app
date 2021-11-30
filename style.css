@@ -31,6 +31,19 @@ body{
     color: #293251;
 }
 
+.footer {
+    width: 300px;    
+    background-color: #FFF;
+    
+    display: block;
+    margin: 1em auto;
+    
+    border-radius: 10px;
+    font-size: 0.8em;
+    padding: 1em;
+    
+}
+
 .notification{
     background-color: #f8d7da;
     display: none;
