@@ -5,7 +5,7 @@ const tempElement = document.querySelector(".temperature-value p");
 const desElement = document.querySelector(".temperature-description p");
 const locationElement = document.querySelector(".location p");
 const dateElement = document.querySelector(".app-title.date");
-const bairesWeatherButton = document.querySelector("#baires-button");
+const inputWeatherButton = document.querySelector("#input-button");
 const currentWeatherButton = document.querySelector("#current-button");
 const cityInput = document.querySelector("#city-input");
 
@@ -99,7 +99,7 @@ function displayWeather(){
 }
 
 // WHEN THE USER CLICKS ON THE BUENOS AIRES BUTTON ELEMENT
-bairesWeatherButton.addEventListener("click", function(){
+inputWeatherButton.addEventListener("click", function(){
     geolocation = false;
     checkWeather();
 });
