@@ -66,9 +66,9 @@ function getWeather(latitude,longitude){
 
     let city = cityInput.value;
 
-    let api = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${KEY}`;
+    let api = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${KEY}`;
         if (geolocation){
-             api = `http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${KEY}`;
+             api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${KEY}`;
         }
     fetch(api)
     .then(function(response){
