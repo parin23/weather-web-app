@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="font/Rimouski.css">
 </head>
+
 <body>
     <div class="container">
         <div class="app-title">
@@ -18,7 +20,7 @@
             <div class="weather-icon">
                 <img src="icons/unknown.png" alt="">
             </div>
-            <div class="temperature-value">
+            <div class="temperature-value" onclick="cToF()">
                 <p>- °<span>C</span></p>
             </div>
             <div class="temperature-description">
@@ -32,19 +34,20 @@
             <p>Time :- </p>
         </div>
         <row>
-            <button class="button button1" id="input-button">Input Location Weather</button>    
+            <button class="button button1" id="input-button">Input Location Weather</button>
             <input class="input-city" type="text" id="city-input" name="city" size="15">
         </row>
-       
+
 
         <button class="button button1" id="current-button">Current Location Weather</button>
     </div>
-      
+
     <div class="footer ">
         Allow Location Permission To view Weather at your location
     </div>
-    
+
     <script src="app.js"></script>
-    
+
 </body>
+
 </html>
