@@ -88,7 +88,6 @@ function getWeather(latitude, longitude) {
 }
 
 function displayWeather() {
-    console.log(weather.temperature.value);
     iconElement.innerHTML = `<img src="icons/${weather.iconID}.png"/>`;
     tempElement.innerHTML = `${Math.floor(weather.temperature.value - KELVIN)}° <span>C</span>`;
     desElement.innerHTML = weather.description;
